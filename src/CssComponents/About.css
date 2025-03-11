@@ -1,0 +1,67 @@
+.about-section {
+    padding: 2rem;
+    background-color: #ffffff; /* White background */
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center-align all content */
+  }
+  
+  /* Oval-Shaped Photo */
+  .about-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-photo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the photo oval-shaped */
+    object-fit: cover; /* Ensures the photo fits well */
+    border: 4px solid #333; /* Adds a border around the photo */
+  }
+  
+  /* About Me Title */
+  .about-section h2 {
+    font-size: 2rem;
+    color: #333; /* Dark gray text */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* About Me Description */
+  .about-content {
+    max-width: 800px; /* Limits the width of the text */
+    margin: 0 auto; /* Centers the text */
+    text-align: left; /* Aligns the text to the left */
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; /* Medium gray text */
+    margin-bottom: 1rem;
+  }
+
+  .resume-box {
+    margin-top: 2rem;
+    background-color: #000; /* Black background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1rem;
+    display: inline-block; /* Make the box fit the content */
+  }
+  
+  .resume-box a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .resume-box a:hover {
+    color: #0077b5; /* LinkedIn blue color on hover */
+  }
+  .download-icon {
+    font-size: 1.2rem; /* Adjust icon size */
+  }

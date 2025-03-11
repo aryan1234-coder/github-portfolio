@@ -1,0 +1,49 @@
+.skills-section {
+    padding: 2rem;
+    background-color: #ffffff; /* White background */
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center-align all content */
+  }
+  
+  .skills-section h2 {
+    font-size: 2rem;
+    color: #333; /* Dark gray text */
+    margin-bottom: 1.5rem;
+  }
+  
+  .skills-container {
+    max-width: 800px; /* Limits the width of the skills container */
+    margin: 0 auto; /* Centers the skills container */
+  }
+  
+  .skill-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .skill-name {
+    font-size: 1.2rem;
+    color: #333; /* Dark gray text */
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0; /* Light gray background for the bar */
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    background-color: #0077b5; /* LinkedIn blue color for the progress bar */
+    border-radius: 5px;
+  }
+  
+  .skill-percentage {
+    font-size: 1rem;
+    color: #555; /* Medium gray text */
+    margin-top: 0.5rem;
+  }

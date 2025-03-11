@@ -1,0 +1,58 @@
+.contact-section {
+    padding: 2rem;
+    background-color: #e6f7ff; /* Light blue background */
+    text-align: center; /* Center-align all content */
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    color: #333; /* Dark gray text */
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-info {
+    max-width: 600px; /* Limits the width of the contact info */
+    margin: 0 auto; /* Centers the contact info */
+    text-align: left; /* Aligns the text to the left */
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem;
+    color: #0077b5; /* LinkedIn blue color */
+    margin-right: 1rem;
+  }
+  
+  .contact-item p {
+    font-size: 1.1rem;
+    color: #555; /* Medium gray text */
+    margin: 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+    color: #333; /* Dark gray text */
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #0077b5; /* LinkedIn blue color on hover */
+  }
+  
+  .copyright {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555; /* Medium gray text */
+  }

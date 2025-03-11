@@ -1,0 +1,83 @@
+/* Header Container */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333; /* Dark background */
+    color: white;
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 97%;
+    z-index: 1000;
+    
+    
+  }
+  
+  /* Left Side: Photo and Name */
+  .left-side {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+  }
+  
+  .left-side h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  /* Right Side: Navigation Links */
+  .right-side {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .right-side a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .right-side a:hover {
+    color: #0077b5; /* LinkedIn blue color */
+  }
+  
+  /* Menu Icon for Smaller Screens */
+  .menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Hide by default */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .right-side {
+      display: none; /* Hide navigation links on smaller screens */
+      flex-direction: column;
+      position: absolute;
+      top: 70px; /* Adjust based on header height */
+      right: 0;
+      background-color: #333;
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .right-side.open {
+      display: flex; /* Show navigation links when menu is open */
+    }
+  
+    .menu-icon {
+      display: block; /* Show menu icon on smaller screens */
+    }
+  }
