@@ -1,8 +1,13 @@
 import React from 'react';
 
+import { useEffect,useState } from 'react';
+
 import '../CssComponents/Resume.css';
 
 const Resume=()=>{
+
+   
+
     const experiences=[
         {
         id: 1,
@@ -10,9 +15,9 @@ const Resume=()=>{
         date: 'OCT 2024 - PRESENT',
         description: (
             <ul>
-              <li>Led a team of <strong>7 developers</strong> to deliver a <strong>30% improvement in application performance</strong> by optimizing frontend-backend integration and database queries.</li>
-              <li>Spearheaded the development of <strong>high-performance logging utilities</strong>, reducing debugging time by <strong>25%</strong> and improving monitoring efficiency across multiple applications.</li>
-              <li>Mentored <strong>5+ junior developers</strong> on best practices for <strong>scalable application development</strong>, <strong>code optimization</strong>, and <strong>efficient logging strategies</strong>.</li>
+               <li>Led a team of 7 developers to deliver a 30% improvement in application performance by optimizing frontend-backend integration and database queries.</li>
+                  <li>Spearheaded the development of high-performance logging utilities, reducing debugging time by 25% and improving monitoring efficiency across multiple applications.</li>
+                  <li>Mentored 5+ junior developers on best practices for scalable application development,code optimization, and efficient logging strategies.</li>
             </ul>
           ),
         team: 'INFOSYS',
@@ -24,10 +29,9 @@ const Resume=()=>{
             date: 'JULY 2022 - OCT 2024',
             description: (
                 <ul>
-                  <li>Led a team of <strong>7 developers</strong> to deliver a <strong>30% improvement in application performance</strong> by optimizing frontend-backend integration and database queries.</li>
-                  <li>Spearheaded the development of <strong>high-performance logging utilities</strong>, reducing debugging time by <strong>25%</strong> and improving monitoring efficiency across multiple applications.</li>
-                  <li>Mentored <strong>5+ junior developers</strong> on best practices for <strong>scalable application development</strong>, <strong>code optimization</strong>, and <strong>efficient logging strategies</strong>.</li>
-                </ul>
+                  <li>Architected and implemented a dynamic dashboard with role-based login functionality, improving user experience for 500+ employees.</li>
+                  <li>Collaborated with cross-functional teams to optimize frontend-backend integration, reducing API response time by 40%.</li>
+                  </ul>
               ),
             team: 'INFOSYS',
             align: 'right'
@@ -85,7 +89,7 @@ const Resume=()=>{
             {experiences.map((exp) => (
               <div key={exp.id} className={`timeline-item ${exp.align}`}>
                 <div className="timeline-content">
-                  <h3>{exp.title}</h3>
+                  <h4>{exp.title}</h4>
                   <p className="team">{exp.team}</p>
                   <p className="description">{exp.description}</p>
                   {/* <ul className='description'>
@@ -110,7 +114,7 @@ const Resume=()=>{
             {educations.map((edu) => (
               <div key={edu.id} className={`timeline-item ${edu.align}`}>
                 <div className="timeline-content">
-                  <h3>{edu.title}</h3>
+                  <h4>{edu.title}</h4>
                   <p className="team">{edu.degree}</p>
                   <p className="description">{edu.description}</p>
                   {/* <ul className='description'>

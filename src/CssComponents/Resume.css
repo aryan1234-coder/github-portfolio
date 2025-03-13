@@ -71,6 +71,7 @@
     font-size: 1rem;
     color: #555; /* Medium gray text */
     line-height: 1.6;
+    font-size: small;
   }
   
   .timeline-date {
@@ -81,8 +82,8 @@
   }
   
   .date-circle {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: #0077b5; /* Circle background color */
     color: #fff; /* White text */
@@ -132,3 +133,5 @@
       font-size: 0.9rem;
     }
   }
+
+  
