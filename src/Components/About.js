@@ -9,7 +9,7 @@ const About = () => {
       <h2>About Me</h2>
       <div className="about-photo-container">
         <img 
-          src="https://avatars.githubusercontent.com/u/71258465?v=4" // Replace with your image path // Replace with your image path
+          src="https://i.postimg.cc/763XPyCQ/IMG-20231014-011325-412.webp" // Replace with your image path // Replace with your image path
           alt="Aryan Sachan" 
           className="about-photo" 
         />

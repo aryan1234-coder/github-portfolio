@@ -34,10 +34,12 @@ const Header = () => {
           className="profile-photo" 
         />
         <h1>Aryan Sachan</h1>
+       
       </div>
 
       {/* Right Side: Navigation Links */}
       <nav className={`right-side ${isMenuOpen ? 'open' : ''}`}>
+         
         <a href="#about" onClick={(e) => scrollToSection('about', e)}>About</a>
         <a href="#skills" onClick={(e) => scrollToSection('skills', e)}>Skills</a>
         <a href="#gallery" onClick={(e) => scrollToSection('gallery', e)}>Gallery</a>

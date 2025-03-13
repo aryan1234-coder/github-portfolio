@@ -1,10 +1,12 @@
 import React from 'react';
+
+
+
 import '../CssComponents/Resume.css';
 
 const Resume=()=>{
 
    
-
     const experiences=[
         {
         id: 1,
@@ -33,20 +35,7 @@ const Resume=()=>{
             team: 'INFOSYS',
             align: 'right'
             },
-            {
-                id: 3,
-                title: 'Systems Engineer Intern',
-                date: 'FEB 2022 - APR 2022',
-                description: (
-                    <ul>
-                      <li>Led a team of <strong>7 developers</strong> to deliver a <strong>30% improvement in application performance</strong> by optimizing frontend-backend integration and database queries.</li>
-                      <li>Spearheaded the development of <strong>high-performance logging utilities</strong>, reducing debugging time by <strong>25%</strong> and improving monitoring efficiency across multiple applications.</li>
-                      <li>Mentored <strong>5+ junior developers</strong> on best practices for <strong>scalable application development</strong>, <strong>code optimization</strong>, and <strong>efficient logging strategies</strong>.</li>
-                    </ul>
-                  ),
-                team: 'INFOSYS',
-                align: 'left'
-                }
+            
     ]
 
     const educations=[

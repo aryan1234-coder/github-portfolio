@@ -7,11 +7,13 @@ import Skills from './Components/Skills';
 import Contact from './Components/Contact';
 import Resume from './Components/Resume';
 
+
 function App() {
   return (
     <div className="portfolio-container">
    <Header/>
 
+  
   
    <section id="about">
    <About/>
