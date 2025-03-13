@@ -5,13 +5,13 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
-
+/* 
 .portfolio-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
   padding-top: 80px;
-}
+} */
 
 section {
    /* Adjust based on header height */
