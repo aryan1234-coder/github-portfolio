@@ -1,7 +1,4 @@
 import React from 'react';
-
-import { useEffect,useState } from 'react';
-
 import '../CssComponents/Resume.css';
 
 const Resume=()=>{
