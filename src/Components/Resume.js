@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useRef,useEffect } from 'react';
+
 
 
 import '../CssComponents/Resume.css';
@@ -68,11 +70,32 @@ const Resume=()=>{
         }
     ]
 
+    const dateRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('bloom');
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    dateRefs.current.forEach(ref => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
     return (
         <section id="experience" className="experience-section">
           <h2>Work Experience</h2>
           <div className="timeline">
-            {experiences.map((exp) => (
+            {experiences.map((exp,index) => (
               <div key={exp.id} className={`timeline-item ${exp.align}`}>
                 <div className="timeline-content">
                   <h4>{exp.title}</h4>
@@ -85,7 +108,7 @@ const Resume=()=>{
           </ul> */}
                 </div>
                 <div className="timeline-date">
-                  <div className="date-circle">
+                  <div className="date-circle"  ref={el => dateRefs.current[index] = el} >
                     {exp.date.split(' - ').map((date, index) => (
                       <span key={index}>{date}</span>
                     ))}
@@ -97,7 +120,7 @@ const Resume=()=>{
 
           <h2>Education</h2>
           <div className="timeline">
-            {educations.map((edu) => (
+            {educations.map((edu,index) => (
               <div key={edu.id} className={`timeline-item ${edu.align}`}>
                 <div className="timeline-content">
                   <h4>{edu.title}</h4>
@@ -110,7 +133,7 @@ const Resume=()=>{
           </ul> */}
                 </div>
                 <div className="timeline-date">
-                  <div className="date-circle">
+                  <div className="date-circle"  ref={el => dateRefs.current[index+experiences.length] = el}>
                     {edu.date.split(' - ').map((date, index) => (
                       <span key={index}>{date}</span>
                     ))}
