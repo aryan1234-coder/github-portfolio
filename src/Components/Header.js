@@ -55,7 +55,7 @@ const Header = () => {
         <div className="background-photo">
         <div className="overlay">
           <h1>Hello, I'm Aryan</h1>
-          <p>Developer, Open Source enthusiast</p>
+          <p>Developer, Open Source Enthusiast</p>
           <button onClick={scrollToHeader} className="know-me-button">
             Get to Know Me :) A
           </button>

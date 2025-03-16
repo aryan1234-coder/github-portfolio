@@ -18,3 +18,42 @@ section {
   
   margin-bottom: 2rem;
 }
+
+/* Mobile First Approach */
+
+/* Small phones (portrait) */
+@media (max-width: 480px) {
+  html { font-size: 14px; }
+  
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Tablets and large phones */
+@media (min-width: 481px) and (max-width: 768px) {
+  html { font-size: 15px; }
+  
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+  }
+}
+
+/* Landscape tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html { font-size: 16px; }
+  
+  .project-card {
+    flex: 1 1 45%;
+  }
+}
